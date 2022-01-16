@@ -7,6 +7,7 @@ from flask import redirect
 app = Flask(__name__)
 
 @app.route('/', methods=['GET', 'POST'])
+@app.route('/mypage/me', methods=['GET', 'POST'])
 def blog():
    if request.method == 'GET':
        print("We received GET")
